@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+
+.main-container {
+    /* margin-top: 50px;
+    margin-right: 140px;
+    margin-left: 140px; */
+
+    
+}
+
+/* Banner section */
+
+
+.new-year-section {
+    width: 100%;
+    height: 600px;
+    flex-shrink: 0;
+    color: #fff;
+    font-family: Merriweather;
+    text-align: center;
+    border-radius: 16px;
+    background-image: url(../resources/Banner\ Image.png);
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+    background-position: center;
+}
+
+.new-year-section h1 {
+    gap: 0;
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.new-year-section h5 {
+    padding-top: 100px;
+    gap: 0;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.new-year-description {
+    /* background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%); */
+}
+
+/* 65% Holidays section style */
+
+.holiday-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: solid red 2px;
+}
+
+.holiday-title {
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 88px;
+    font-weight: 700;
+}
+
+.holiday-para {
+    margin-top: 50px;
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.single-title {
+    color: #070211;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+
+/* Midnight Party Section */
+
+.party-section {
+    border: solid red 2px;
+    /* fill: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%); */
+    width: 100%;
+    height: 650px;
+    background-image: url(../resources/Vectorrr.png);
+    background-repeat: no-repeat;
+}
+
+.party-title {
+    padding-left: 80px;
+    color: #FFF;
+    font-family: Merriweather;
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 7.04px;
+}
