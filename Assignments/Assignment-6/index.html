@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        .font-mulish {
+            font-family: "Mulish", sans-serif;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container p-2 lg:p-4 mx-auto">
+        <!-- Navbar -->
+        <div>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <a class="btn btn-ghost text-3xl font-black font-mulish">Spark</a>
+                </div>
+                <div class="flex-none gap-2">
+                    <ul class="menu menu-horizontal px-1 space-x-2">
+                        <div class="tooltip " data-tip="Home">
+                            <button class="btn border rounded-[50px] w-[56px] h-[56px] justify-center"><img
+                                    src="./images/home.png" alt=""></button>
+                        </div>
+                        <div class="tooltip " data-tip="Write A Post">
+                            <button class="btn border rounded-[50px] w-[56px] h-[56px] justify-center"><img
+                                    src="./images/pen.png" alt=""></button>
+                        </div>
+                        <div class="tooltip " data-tip="Peoples">
+                            <button class="btn border rounded-[50px] w-[56px] h-[56px] justify-center"><img
+                                    src="./images/add.png" alt=""></button>
+                        </div>
+                        <div class="tooltip " data-tip="Forums">
+                            <button class="btn border rounded-[50px] w-[56px] h-[56px] justify-center"><img
+                                    src="./images/flag.png" alt=""></button>
+                        </div>
+                    </ul>
+                    <div>
+                        <button class="btn sm:btn-sm md:btn-md lg:btn-lg bg-[#797DFC] rounded-[50px] text-white">Sign
+                            In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner Section -->
+        <div class="bg-[#12132D] rounded-[32px] my-10 lg:my-32 flex flex-col lg:flex-row py-12 lg:py-24 px-10 lg:px-24"
+            style="background-image: url('./images/bgbanner.png'); background-size: cover; background-repeat: no-repeat;">
+            <div class="flex flex-col lg:flex-row justify-around items-center w-full  gap-6">
+                <div class="space-y-4">
+                    <h1 class="font-mulish font-black text-4xl lg:text-6xl text-white lg:leading-[86px]">Welcome to the
+                        <br><span class="text-[#797DFC]">Spark</span>
+                        Forum
+                    </h1>
+                    <p class="font-mulish font-medium text-[#FFFFFFCC]">Share your favorite opinion and win and wp forum
+                        coffee mug!</p>
+                    <div>
+                        <div class="join flex items-center justify-center">
+                            <input id="search-input" class="input input-bordered join-item rounded-full w-full"
+                                placeholder="Search here anything" />
+                            <button onclick="handleSearch()"
+                                class="btn join-item rounded-full  bg-[#797DFC]">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="p-12 font-mulish text-2xl font-medium bg-[#fff] rounded-[32px] flex justify-between leading-10 gap-6">
+                    <div>
+                        <h3>Registered Users</h3>
+                        <h3>Forum</h3>
+                        <h3>Topics</h3>
+                        <h3>Replies</h3>
+                    </div>
+                    <div>
+                        <h3>02</h3>
+                        <h3>05</h3>
+                        <h3>07</h3>
+                        <h3>06</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container p-2 lg:p-4 mx-auto">
+        <!-- loading spinner -->
+        <div class="flex items-center">
+            <div id="loading" class="hidden ">
+                <span class="loading loading-dots loading-lg"></span>
+            </div>
+        </div>
+        <!-- Discuss Section -->
+        <div class="">
+            <h2 class="font-black text-5xl text-center leading-[50px]font-mulish my-4">Let’s Discuss</h2>
+            <p class="text-center font-inter text-[#12132D99] my-2">Yes, you can run unit tests and view the results
+                directly
+                within the app. <br>The integrated testing features
+                allow for a streamlined .</p>
+        </div>
+        <!-- Card Container -->
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full  lg:w-2/3">
+                <div id="card-container">
+                </div>
+            </div>
+            <!-- Title Section On Click -->
+            <div id="title-count" class="w-full lg:w-1/3 bg-[#12132D0D]  rounded-3xl p-6 my-6 h-auto">
+                <div class="flex justify-between">
+                    <div>
+                        <h2 class="font-mulish text-xl font-bold">Title</h2>
+                    </div>
+                    <div class="flex relative gap-2 ">
+                        <div>
+                            <img class="w-4 h-4 absolute left-[-5px]" src="./images/done-icon.png" alt="">
+                            <img class="w-4 h-4 absolute " src="./images/done-icon1.png" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-inter text-[#12132D99]">Mark as read (<span id="counter-1">
+
+                                </span>)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Forum -->
+        <div>
+            <div
+                class="bg-[#12132D] rounded-[32px] my-10 lg:my-32 flex flex-col lg:flex-row pt-12 lg:pt-24 px-10 lg:px-24">
+                <div class="flex flex-col lg:flex-row justify-around items-center w-full  gap-6">
+                    <div class="space-y-8">
+                        <h1 class="font-mulish font-black text-4xl lg:text-6xl text-white ">Join Our
+                            Forum
+                        </h1>
+                        <p class="font-mulish font-medium text-[#FFFFFFCC]">Share your favorite opinion and win and wp
+                            forum coffee mug! <br> Yes, you can run unit tests and view the results directly within the
+                            app.
+                        </p>
+                        <div>
+                            <button
+                                class="btn join-item rounded-full border-none bg-[#797DFC] text-white w-2/5">Register
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="border border-dashed w-2/3 lg:w-1/3 h-[400px]"
+                        style="background-image: url(./images/joinforum.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Post Section -->
+        <div>
+            <div class="">
+                <h2 class="font-black text-5xl text-center leading-[50px]font-mulish my-4">Latest Posts</h2>
+                <p class="text-center font-inter text-[#12132D99] my-2">Yes, you can run unit tests and view the results
+                    directly
+                    within the app. <br>The integrated testing features
+                    allow for a streamlined .</p>
+            </div>
+        </div>
+        <!-- Post Container -->
+        <div id="latest-container" class="flex flex-col lg:flex-row w-full justify-evenly items-center py-8 gap-5">
+        </div>
+    </main>
+    <footer class="container w-full bg-[#12132D0D] p-10 mx-auto flex flex-col text-center items-center space-y-5">
+        <h1 class="font-mulish text-4xl text-[#12132D] font-black">SpArk</h1>
+        <p class="font-mulish text-[#12132DB3]">Contrary to popular belief, Lorem Ipsum is not simply random text. <br>
+            It has roots in a piece of classical Latin literature from 45 BC</p>
+        <img src="./images/Social.png" alt="">
+        <hr>
+        <p class="font-mulish text-[#12132D80]">2017, All Rights Reserved.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
+</body>
+
+</html>

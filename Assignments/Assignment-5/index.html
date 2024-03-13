@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <!-- Nav -->
+        <div  class="mx-auto lg:w-[1170px]">
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start text-[#030712]">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-[#030712B3] rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold font-raleway">E-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a href="#psection" class="btn bg-[#1DD1001A] text-[#1DD100] font-raleway">Bus<img
+                            src="./images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- Banner -->
+        <div  class="banner lg:h-[550px] mx-auto lg:w-[1170px] text-center">
+            <h1 class="font-raleway text-3xl lg:text-6xl font-extrabold text-white  pt-12 leading-[76px]">End-to-End
+                Travel with
+                <br> <span class="text-[#1DD100]">Pacific Expressway</span>
+            </h1>
+            <p class="font-inter font-normal text-white leading-[30px] mt-5">your trusted partner for end-to-end travel
+                solutions. Navigate effortlessly and arrive with confidence,<br> ensuring every trip is a smooth and
+                unforgettable experience</p>
+            <button class="btn btn-success bg-[#1DD100] font-raleway font-bold mt-5"><a href="#buy-seat-button">Buy
+                    Tickets</a></button>
+        </div>
+        <!-- Best Offers -->
+        <div  class="w-full lg:w-[1170px] h-auto mx-auto mt-40">
+            <h3 class="text-center font-raleway font-bold text-4xl mb-10">Best offers for you</h3>
+            <div class="flex gap-5 lg:leading-[10px]">
+                <div class="flex flex-col lg:flex-row  bg-[#FFBF0F]  w-[570px] rounded-3xl">
+                    <div class="flex flex-col p-12">
+                        <h3 class="font-inter font-black text-3xl text-[#030712CC]">15% OFF</h3> <br>
+                        <h5 class="font-inter font-semibold text-xl text-[#030712CC]">on your next purchase</h5><br>
+                        <p class="font-inter font-medium text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="hidden lg:block">
+                        <img src="./images/cupon-devider.png" alt="" class="w-[48px] h-full p-0 m-0">
+                    </div>
+                    <div class="flex flex-col items-center p-4 lg:p-12 lg:leading-[10px]">
+                        <h4 class="font-raleway font-bold text-2xl text-[#030712CC] leading-[60px] text-center">
+                            NEW<sub>15</sub></h4>
+                        <p class="font-inter font-medium text-[#03071280]">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-[#F78C9C] w-[570px] rounded-3xl">
+                    <div class="flex flex-col p-12">
+                        <h3 class="font-inter font-black text-3xl text-[#030712CC]">20% OFF</h3> <br>
+                        <h5 class="font-inter font-semibold text-xl text-[#030712CC]">on your next purchase</h5><br>
+                        <p class="font-inter font-medium text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="hidden lg:block">
+                        <img src="./images/cupon-devider.png" alt="" class="w-[48px] h-full p-0 m-0">
+                    </div>
+                    <div class="p-10 mt-2 flex flex-col text-center leading-[10px]">
+                        <h4 class="font-raleway font-bold text-2xl text-[#030712CC] leading-[60px]">Couple 20</h4>
+                        <p class="font-inter font-medium text-[#03071280]">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-center items-center my-14">
+                <button class="btn border-[#1DD100] text-[#1DD100] ">See All Offers</button>
+            </div>
+        </div>
+        <!-- Paribahan Section -->
+        <div id="psection" class="w-full  single-border my-14">
+            <!-- First Section -->
+            <div class="w-[1170px] mx-auto">
+                <!-- Heading -->
+                <div class="mt-32">
+                    <h2 class="font-raleway font-bold text-4xl text-center">Pacific Expressway</h2>
+                    <p class="font-inter text-base text-[#03071299] py-6 text-center">Pacific Expressway, a modern
+                        marvel of infrastructure, seamlessly <br> navigates diverse landscapes, connecting urban hubs to
+                        coastal paradises. <br> With its innovative design and scenic routes.</p>
+                </div>
+                <!-- Schedule -->
+                <div class="flex bg-[#FFFFFF] w-full h-[418px] rounded-3xl ">
+                    <div class="p-8 w-2/3">
+                        <div class="flex justify-between mb-6">
+                            <div class="flex items-center gap-3">
+                                <div>
+                                    <img src="./images/bus-logo.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="font-raleway font-bold text-3xl">Pacific Expressway</h3>
+                                    <p class="font-inter text-base text-[#03071299] ">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div class="bg-[#1DD10026] text-[#1DD100] rounded-xl flex items-center gap-2 p-2">
+                                <div>
+                                    <img src="./images/seat-green.png" alt="">
+                                </div>
+                                <div>
+                                    <p><span id="current-available-seat">40</span>Seats Left</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Route Section -->
+                        <div class="w-full flex flex-col bg-[#F7F8F8] rounded-3xl p-8">
+                            <div
+                                class="flex justify-between font-raleway border-b border-dashed border-[#03071220] pb-4">
+                                <div>
+                                    <p class="text-[#03071299] text-xl font-semibold">Route</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-[#030712] text-xl font-semibold">Dhaka - Sylhet</h5>
+                                </div>
+                            </div>
+                            <div
+                                class="flex justify-between font-raleway border-b border-dashed border-[#03071220] pt-4 pb-4">
+                                <div>
+                                    <p class="text-[#03071299] text-xl font-semibold">Departure Time</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-[#030712] text-xl font-semibold">9:00 PM</h5>
+                                </div>
+                            </div>
+                            <div class="flex flex-auto gap-4 mt-6">
+                                <div class="flex-auto bg-[#0307120D] text-[#030712CC] rounded-xl p-5 text-center w-1/3">
+                                    <h5>Boarding Point - Laxmipur</h5>
+                                </div>
+                                <div class="flex-auto bg-[#0307120D] text-[#030712CC] rounded-xl p-5 text-center w-1/3">
+                                    Dropping Point - Bogura</div>
+                                <div class="flex-auto bg-[#0307120D] text-[#030712CC] rounded-xl p-5 text-center w-1/3">
+                                    Est. Time - 11 Hour</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-dashed border-[#03071220]">
+                        <img src="./images/info-devider.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center p-8 w-1/3 font-raleway text-center gap-2">
+                        <div>
+                            <img src="./images/fare.png" alt="" class="w-[40px] h-[40px]">
+                        </div>
+                        <h2 class="font-bold text-3xl text-[#030712]">550 Taka</h2>
+                        <p class="font-semibold text-2xl text-[#03071299]">Per Seat</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Section -->
+            <div class="w-[1170px] flex bg-white mx-auto p-8 mt-8 rounded-3xl">
+                <!-- Seat List -->
+                <div class="w-3/5 px-4 border-r border-dashed border-[#03071220]">
+                    <h3 class="font-raleway font-semibold text-2xl text-[#030712]">Select Your Seat</h3>
+                    <div class="flex justify-between border-y border-dashed border-[#03071220] mt-4 font-inter">
+                        <div class="flex gap-2 py-4">
+                            <img src="./images/seat-gray.png" alt="" class="w-[28px] h-[28px]">
+                            <p class="font-medium text-xl text-[#03071280]">Available</p>
+                        </div>
+                        <div class="flex gap-2 py-4">
+                            <img src="./images/seat-green-filled.png" alt="" class="w-[28px] h-[28px]">
+                            <p class="font-medium text-xl text-[#1DD100]">Selected</p>
+                        </div>
+                    </div>
+                    <!-- Seats Container -->
+                    <div id="buy-seat-button">
+                        <div class="flex flex-row-reverse my-6">
+                            <div class="flex justify-center items-center bg-[#0307121A] w-[110px] h-[56px] rounded-2xl">
+                                <img src="./images/vecteezy_steering-wheel-icon-template-black-color-editable-steering_6693284.jpg"
+                                    alt="" class="w-[24px] h-[24px]">
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full my-6">
+                            <h1 class="font-semibold text-xl text-[#03071280] text-center flex items-center">A</h1>
+                            <button id="a1" onclick="buySeat()" class="btn seat">A1</button>
+                            <button id="a2" onclick="buySeat()" class="btn seat">A2</button>
+                            <button id="a3" onclick="buySeat()" class="btn seat">A3</button>
+                            <button id="a4" onclick="buySeat()" class="btn seat">A4</button>
+                        </div>
+                        <div class="flex justify-between w-full my-6">
+                            <h1 class="font-semibold text-xl text-[#03071280] text-center flex items-center">B</h1>
+                            <button id="b1" onclick="buySeat()" class="btn seat">B1</button>
+                            <button id="b2" onclick="buySeat()" class="btn seat">B2</button>
+                            <button id="b3" onclick="buySeat()" class="btn seat">B3</button>
+                            <button id="b4" onclick="buySeat()" class="btn seat">B4</button>
+                        </div>
+                        <div class="flex justify-between w-full my-6">
+                            <h1 class="font-semibold text-xl text-[#03071280] text-center flex items-center">C</h1>
+                            <button id="c1" onclick="buySeat()" class="btn seat">C1</button>
+                            <button id="c2" onclick="buySeat()" class="btn seat">C2</button>
+                            <button id="c3" onclick="buySeat()" class="btn seat">C3</button>
+                            <button id="c4" onclick="buySeat()" class="btn seat">C4</button>
+                        </div>
+                        <div class="flex justify-between w-full my-6">
+                            <h1 class="font-semibold text-xl text-[#03071280] text-center flex items-center">D</h1>
+                            <button id="d1" onclick="buySeat()" class="btn seat">D1</button>
+                            <button id="d2" onclick="buySeat()" class="btn seat">D2</button>
+                            <button id="d3" onclick="buySeat()" class="btn seat">D3</button>
+                            <button id="d4" onclick="buySeat()" class="btn seat">D4</button>
+                        </div>
+                        <div class="flex justify-between w-full my-6">
+                            <h1 class="font-semibold text-xl text-[#03071280] text-center flex items-center">E</h1>
+                            <button id="e1" onclick="buySeat()" class="btn seat">E1</button>
+                            <button id="e2" onclick="buySeat()" class="btn seat">E2</button>
+                            <button id="e3" onclick="buySeat()" class="btn seat">E3</button>
+                            <button id="e4" onclick="buySeat()" class="btn seat">E4</button>
+                        </div>
+                        <div class="flex justify-between w-full my-6">
+                            <h1 class="font-semibold text-xl text-[#03071280] text-center flex items-center">F</h1>
+                            <button id="f1" onclick="buySeat()" class="btn seat">F1</button>
+                            <button id="f2" onclick="buySeat()" class="btn seat">F2</button>
+                            <button id="f3" onclick="buySeat()" class="btn seat">F3</button>
+                            <button id="f4" onclick="buySeat()" class="btn seat">F4</button>
+                        </div>
+                        <div class="flex justify-between w-full my-6">
+                            <h1 class="font-semibold text-xl text-[#03071280] text-center flex items-center">G</h1>
+                            <button id="g1" onclick="buySeat()" class="btn seat">G1</button>
+                            <button id="g2" onclick="buySeat()" class="btn seat">G2</button>
+                            <button id="g3" onclick="buySeat()" class="btn seat">G3</button>
+                            <button id="g4" onclick="buySeat()" class="btn seat">G4</button>
+                        </div>
+                        <div class="flex justify-between w-full my-6">
+                            <h1 class="font-semibold text-xl text-[#03071280] text-center flex items-center">H</h1>
+                            <button id="h1" onclick="buySeat()" class="btn seat">H1</button>
+                            <button id="h2" onclick="buySeat()" class="btn seat">H2</button>
+                            <button id="h3" onclick="buySeat()" class="btn seat">H3</button>
+                            <button id="h4" onclick="buySeat()" class="btn seat">H4</button>
+                        </div>
+                        <div class="flex justify-between w-full my-6">
+                            <h1 class="font-semibold text-xl text-[#03071280] text-center flex items-center">I</h1>
+                            <button id="i1" onclick="buySeat()" class="btn seat">I1</button>
+                            <button id="i2" onclick="buySeat()" class="btn seat">I2</button>
+                            <button id="i3" onclick="buySeat()" class="btn seat">I3</button>
+                            <button id="i4" onclick="buySeat()" class="btn seat">I4</button>
+                        </div>
+                        <div class="flex justify-between w-full my-6">
+                            <h1 class="font-semibold text-xl text-[#03071280] text-center flex items-center">J</h1>
+                            <button id="j1" onclick="buySeat()" class="btn seat">J1</button>
+                            <button id="j2" onclick="buySeat()" class="btn seat">J2</button>
+                            <button id="j3" onclick="buySeat()" class="btn seat">J3</button>
+                            <button id="j4" onclick="buySeat()" class="btn seat">J4</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form -->
+                <div class="w-2/5 px-4">
+                    <div class="border-b border-dashed border-[#03071220] ">
+                        <h3 class="font-raleway font-semibold text-2xl text-[#030712] pb-4  ">Select Your Seat</h3>
+                    </div>
+                    <div class="bg-[#F7F8F8] rounded-xl p-8 mt-6 ">
+                        <div class="py-2 ">
+                            <div class="flex ">
+                                <div class="w-1/3">
+                                    <h3 class="font-semibold text-[#030712] my-2">Seats <span id="seat-add-count"
+                                            class=" bg-[#1DD100] w-[23px] h-[14px] rounded-lg"></span></h3>
+                                    <div id="seats" class="font-inter text-[#03071299] py-2 "></div>
+                                </div>
+                                <div class="w-1/3">
+                                    <h3 class="font-semibold text-[#030712] my-2 text-center">Class</h3>
+                                    <div id="class" class="text-center font-inter text-[#03071299] py-2 "></div>
+                                </div>
+                                <div class="w-1/3">
+                                    <h3 class="font-semibold text-[#030712] my-2 text-right">Price</h3>
+                                    <div id="price" class="text-right font-inter text-[#03071299] py-2 "></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row justify-between w-full">
+                                <div>
+                                    <h3 class="font-semibold text-[#030712] my-2 text-right">Total Price</h3>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-[#030712] my-2 text-right">BDT<span
+                                            id="total-price"></span></h3>
+                                </div>
+                            </div>
+                            <div id="total-price-section" class="py-4 hidden">
+                                <div class="join flex">
+                                    <input id="input-coupon"
+                                        class="input input-bordered join-item placeholder-[#03071266]"
+                                        placeholder="Have Any Coupons?" />
+                                    <button id="apply-button" onclick="applyDiscount()"
+                                        class="btn join-item rounded-xl bg-[#1DD100] text-white flex-1">Apply</button>
+                                </div>
+                            </div>
+                            <div id="discount-section" class="flex flex-row justify-between w-full hidden">
+                                <div>
+                                    <h3 class="font-semibold text-[#030712] my-2 text-right">Grand Total</h3>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-[#030712] my-2 text-right">BDT<span
+                                            id="grand-total"></span></h3>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="mt-6">
+                        <label class="form-control w-full">
+                            <div class="label">
+                                <span class="label-text font-inter font-semibold text-xl mb-1">Passenger Name*</span>
+                            </div>
+                            <input type="text" placeholder="Enter your name "
+                                class="input input-bordered w-full  placeholder-[#03071266] required" />
+                        </label>
+                        <label class="form-control w-full">
+                            <div class="label">
+                                <span class="label-text font-inter font-semibold text-xl mb-1">Phone Number*</span>
+                            </div>
+                            <input id="phone-number" type="text" placeholder="Enter your phone number "
+                                class="input input-bordered w-fullplaceholder-[#03071266] required" />
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text font-inter font-semibold text-xl mb-1">Email ID</span>
+                                </div>
+                                <input type="text" placeholder="Enter your email id "
+                                    class="input input-bordered w-full  placeholder-[#03071266]" />
+                            </label>
+                            <div>
+                                <!-- Open the modal using ID.showModal() method -->
+                                <button class="btn btn-wide w-full mt-6 bg-[#1DD100] text-white "
+                                    onclick="my_modal_2.showModal()">Next</button>
+                                <dialog id="my_modal_2" class="modal">
+                                    <div class="modal-box">
+                                        <h3 class="font-bold text-lg">Congratulations</h3>
+                                        <p class="py-4">You Have Successfully booked the Desired Seat</p>
+                                        <p class="py-4">Press ESC key or click outside to close</p>
+                                    </div>
+                                    <form method="dialog" class="modal-backdrop">
+                                        <button>close</button>
+                                    </form>
+                                </dialog>
+                            </div>
+                            <div class="w-full flex justify-evenly pt-6">
+                                <p class="border-b text-[#03071299]">Terms and Conditions</p>
+                                <p class="border-b text-[#03071299]">Cancellation Policy</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script/utility.js"></script>
+    <script src="./script/main.js"></script>
+</body>
+
+</html>
